@@ -147,3 +147,8 @@ body::after {
     display: block;
     height: 20px;
 }
+@media (max-width: 768px) {
+    #menu {
+        margin-left: 0;
+        text-align: center;
+    }
