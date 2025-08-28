@@ -197,7 +197,7 @@ class EncryptedMessage {
 
         setTimeout(() => {
             this.displayCharacter(menuText, currentIndex, decryptedText);
-        }, 25);
+        }, 30);
     }
 
     autoScrollIfNeeded() {
