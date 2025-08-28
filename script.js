@@ -197,7 +197,7 @@ class EncryptedMessage {
 
         setTimeout(() => {
             this.displayCharacter(menuText, currentIndex, decryptedText);
-        }, 10);
+        }, 17);
     }
 
     autoScrollIfNeeded() {
@@ -256,7 +256,7 @@ class EncryptedMessage {
 
     randomizeText() {
         let randomizeCount = 0;
-        const maxRandomizations = 50;
+        const maxRandomizations = 30;
 
         const randomizeInterval = setInterval(() => {
             if (randomizeCount >= maxRandomizations) {
@@ -267,7 +267,7 @@ class EncryptedMessage {
             
             this.menuElement.textContent = this.encryptText(this.originalText);
             randomizeCount++;
-        }, 10);
+        }, 30);
 
         this.intervals.push(randomizeInterval);
 
