@@ -189,7 +189,7 @@ class EncryptedMessage {
 
         this.menuElement.innerHTML = decryptedText + '<span class="cursor"></span>';
         decryptedText += menuText[currentIndex];
-        currentIndex++;
+        currentIndex++2;
 
         if (currentIndex % 50 === 0) {
             this.autoScrollIfNeeded();
@@ -197,7 +197,7 @@ class EncryptedMessage {
 
         setTimeout(() => {
             this.displayCharacter(menuText, currentIndex, decryptedText);
-        }, 17);
+        }, 19);
     }
 
     autoScrollIfNeeded() {
